@@ -5,7 +5,7 @@ format: pdf
 editor: visual
 ---
 
-My project will be about determinging the chill requirement of 'Geneva 3' kiwiberries, and using plant growth hormones to delay kiwiberry budbreak in the spring. 
+My project will be about determining the chill requirement of 'Geneva 3' kiwiberries, and using plant growth hormones to delay kiwiberry budbreak in the spring.
 
 ```{r}
 1 + 1
