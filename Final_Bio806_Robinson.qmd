@@ -5,13 +5,7 @@ format: pdf
 editor: visual
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+My project will be about determinging the chill requirement of 'Geneva 3' kiwiberries, and using plant growth hormones to delay kiwiberry budbreak in the spring. 
 
 ```{r}
 1 + 1
