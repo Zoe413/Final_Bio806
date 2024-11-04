@@ -1,11 +1,16 @@
 ---
-title: "Final_Bio806"
+title: "Exploring Kiwiberry Dormancy and Novel Frost Protection Methods"
 author: "Zoe Robinson"
+date: "November 17, 2024"
 format: pdf
 editor: visual
+bibliography: references.bib
+csl: chicago-author-date-16th-edition.csl
 ---
 
-My project will be about determining the chill requirement of 'Geneva 3' kiwiberries, and using plant growth hormones to delay kiwiberry budbreak in the spring.
+[**Introduction**]{.underline}
+
+Many woody perennials originating in temperate climates require a certain period of cold temperatures to successfully flower and fruit the following season @lang1987b
 
 ```{r}
 1 + 1
