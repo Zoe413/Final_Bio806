@@ -80,7 +80,8 @@ Staring April 1, 2024, laterals were assessed every other day for budbreak (BBCH
 
 ```{r, echo=FALSE}
 
-WeatherData2023<- read.csv("C:/Users/zrrob/OneDrive/Desktop/Kiwiberry/Historical Temp Data/WeatherData2023.csv")
+WeatherData2023<- read.csv("C:/Users/zrrob/OneDrive/Documents/Final_Bio806/WeatherData2023.csv")
+
 
 library(ChillModels)
 library(lubridate)
@@ -118,7 +119,7 @@ ggplot(data = WeatherData2023, aes(x=Time)) +
 Laterals were collected on November 16 for 25 CP, November 22 for 30 CP, December 1 for 35 CP, December 8 for 40 CP, December 17 for 45 CP, December 23rd for 50 CP, January 10 for 60 CP, and February 22 for 80 CP shoots . At the end of 4 weeks, there was 0%, 0%, 1.6%, 14%, 47%, 42%, 38%, and 26% of buds burst, respectively (Table 1).
 
 ```{r, echo=FALSE, warning=FALSE}
-chill<- read.csv("C:/Users/zrrob/OneDrive/Desktop/Kiwiberry/Chill requirement methods/chill.csv", header = TRUE)
+chill<- read.csv("C:/Users/zrrob/OneDrive/Documents/Final_Bio806/chill.csv", header = TRUE)
 
 library(knitr)
 library(tidyverse)
@@ -148,12 +149,11 @@ This data implies that the vines entered ecodormancy sometime between 40 and 45 
 
 ChillData$Treatment<-as.factor(ChillData$Treatment)
 
-barchartCP <- ggplot(data = ChillData, aes(x = Treatment, y = Percent_BudsBurst)) +
+ggplot(data = ChillData, aes(x = Treatment, y = Percent_BudsBurst)) +
   geom_col() +
   labs(x = "Number of Chill Portions", y = "Percent Budburst") +
   ggtitle("Figure 2. Budburst 4 Weeks Post-Collection")
 
-ggsave("barchartCP.png", plot = barchartCP, width = 20, height = 16)
 ```
 
 ```{r, echo=FALSE}
@@ -187,7 +187,7 @@ No interactions were found to be significant.
 As shown in the ANOVA results below, there was no significant difference in the date of spring budbreak between different varieties of kiwiberry, or between laterals that faced different directions. There was also no significant difference in the date of spring budbreak between different gibberellic acid treatments.
 
 ```{r, echo=FALSE, results=FALSE}
-data<- read.csv("C:/Users/zrrob/OneDrive/Desktop/Kiwiberry/GA Methods/gadata_splitsplit_2024_v2.csv")
+data<- read.csv("C:/Users/zrrob/OneDrive/Documents/Final_Bio806/gadata_splitsplit_2024_v2.csv")
 
 #Data setup
 data$block<- as.factor(data$block)
@@ -334,5 +334,57 @@ ggplot(GA2024, mapping = aes(x=variety, y=budbreak))+
 The 'Meader Female' kiwiberry variety was observed to break about one day later than the 'Ananasnaya' variety (figure 4), but the difference was not significant.
 
 [**Discussion**]{.underline}
+
+```{r, echo=FALSE}
+library(ChillModels)
+WeatherDataMultiple <- read.csv("C:/Users/zrrob/OneDrive/Documents/Final_Bio806/MultipleLocation 2022-23 Weather Data.csv", header=TRUE, stringsAsFactors=FALSE)
+
+WeatherDataMultiple$TempC<- (WeatherDataMultiple$TempF-32)*5/9
+
+library(tidyverse)
+CPs<- WeatherDataMultiple %>% 
+  group_by(ID, Location) %>% 
+  summarise(ChillPortions= dynamic_model(TempC))
+
+latlongdata<- read.csv("C:/Users/zrrob/OneDrive/Desktop/Kiwiberry/Historical Temp Data/Places4WeatherData.csv")
+
+together<- left_join(CPs, latlongdata, by = "ID")
+
+library(maps)
+
+usa_states <- map_data("state")
+
+mystates <- usa_states %>% 
+  filter(region %in% c("massachusetts", "connecticut", "maine", "new jersey", "new york", "pennsylvania", "new hampshire", "vermont", "deleware", 'rhode island',
+                       "maryland", "virginia", "west virginia", "north carolina", "south carolina", "georgia"))
+
+
+legend_data <- data.frame(
+  long = c(-71, -71),
+  lat = c(33, 31),
+  ChillPortions = c(46, 44),
+  Location = c("Fulfilled Estimated 'Geneva 3' Chill Requirement", "Did Not Fulfill Chill Requirement")
+)
+
+library(ggrepel)
+
+ggplot(mystates, aes(long, lat)) +
+  geom_polygon(aes(group = group), fill = 'white', color = '#292c26', size= 0.5) +
+  coord_fixed(ratio = 1) +
+  geom_point(data = together, aes(x = long, y = lat, color = ifelse(ChillPortions > 45, "green", "red")), pch = 16, size = 3) +
+  geom_text_repel(data = together, aes(x = long, y = lat, label = Name), size = 3) +
+  scale_color_identity()+
+  ggtitle("Locations that reached 45 Chill Portions Winter 2023-24")+
+  xlab("Longitude")+
+  ylab("Latitude")+
+  geom_point(data = legend_data, aes(x = long, y = lat, color = ifelse(ChillPortions > 45, "green", "red")), pch = 16, size = 3) +
+  geom_text(data = legend_data, aes(x = long, y = lat, label = Location), vjust = -1, size = 3)+
+  theme(
+    plot.title = element_text(size = 12, face = "bold"),
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+    axis.text = element_text(size = 12)
+  )
+```
 
 Works Cited
