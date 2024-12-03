@@ -2,25 +2,337 @@
 title: "Exploring Kiwiberry Dormancy and Novel Frost Protection Methods"
 author: "Zoe Robinson"
 date: "November 17, 2024"
+date-format: "MMMM YYYY"
 format: pdf
 editor: visual
 bibliography: references.bib
 csl: chicago-author-date-16th-edition.csl
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+```{r, echo=FALSE}
+library(formatR)
+knitr::opts_chunk$set(echo = TRUE,tidy.opts=list(width.cutoff=30), tidy=TRUE)
+```
+
 [**Introduction**]{.underline}
 
-Many woody perennials originating in temperate climates require a certain period of cold temperatures to successfully flower and fruit the following season @lang1987b
+Many woody perennials originating in temperate climates require a certain period of cold temperatures to successfully flower and fruit the following season [@lang1987]. This period is called dormancy, the temporary cessation of visible growth, and is generally triggered by short daylength and/or cold nighttime temperatures [@fadón2020; @liu2019]. Dormancy can be split into two phases: endodormancy, or true dormancy, and ecodormancy. Endodormancy is mediated by endogenous plant-hormones. The plant will not grow even if environmental conditions favor growth, until a certain amount of chill, known as the chill requirement, has been experienced by the plant. The chill requirement is defined as the lowest number of units of cold temperature, usually between 32 and 45 degrees Fahrenheit, needed for a plant to end endodormancy and grow again when exposed to favorable conditions [@winkler2013]. The type of unit used depends on the chill model, and could be chill hours, chill units, or chill portions [@luedeling2012]. After the chilling requirement has been fulfilled, the plant shifts from endodormancy to ecodormancy, where growth is prevented only by unfavorable environmental conditions [@lang1987; @parkes2020]. Once temperatures increase in the spring, growth resumes [@fadón2020; @liu2019].
 
-```{r}
-1 + 1
+![](Basic%20Dormancy%20cycle%20of%20Woody%20Perennials.png){fig-align="center" width="400"}
+
+*Figure 1. Basic Dormancy Cycle of Woody Perennials*
+
+While the exact mechanisms by which plants enter and leave endodormancy are unknown, it is understood that plant hormones, temperature, and internal carbohydrate balance may play roles [@liu2019; @wigge2013; @tixier2019].
+
+The current method to estimate endodormancy fulfillment is using chill models [@luedeling2012]. Chill models estimate the amount of chill (chill accumulation) a plant experiences by keeping track of hourly temperatures. The first chill model, known as the Chill Hours model, counts all hours with an average temperature under 45 degrees Fahrenheit as a “chill hour” [@weinberger1950] . This model was imperfect at predicting endodormancy release, prompting the creation of the Utah model in 1974, in which any hour at 43 degrees Fahrenheit contributes one chill unit to chill accumulation, an hour below 43 degrees Fahrenheit contributes less than 1 chill-unit, and an hour above 43 degrees Fahrenheit subtracts chill units [@richardson1974]. However, this model failed to account for the observation that cold temperatures followed by warm temperatures appear to contribute less to chill accumulation [@fishman1987]. In other words, the Utah model assumed that any hour during which the average temperature fell within the appropriate range contributes equally to chill accumulation, when in fact field experiments suggested that the adjacent hours’ temperatures affect the ability of the hour preceding and/or following to contribute to chill accumulation. Improvement on the Utah model was attempted with the Dynamic model, which tries to mimic a hypothesized physiological process of chill accumulation through a two-step procedure [@fishman1987; @egea2020; @erez1998]. The Dynamic model assumes that dormancy completion depends on the accumulation of a dormancy breaking factor (DBF) that builds in response to certain temperature conditions. In the first step, DBF builds reversibly, increasing under low temperatures and decreasing under high temperatures. Once DBF reaches a certain level, it transforms into a stable, non-reversible unit called a “chill portion”, the unit of chill accumulation for this model [@erez1998] .
+
+Although the Chill Hours, Utah, and Dynamic models were initially designed for chill accumulation in peach, they have since been applied to a wide range of fruit and nut crops, including cherry, apricot, apple, pistachio, walnut, and kiwifruit [@luedeling2012 ; @zhao2017]. Chill models can be applied to Actinidia spp. based on the observation that they require chill accumulation in the winter or else require application of chemicals, such as hydrogen cyanimide, to bud, suggesting that the amount of chill required can be calculated [@mcpherson2001 ; @zhao2017]. The success of the Dynamic model across different species suggests that it may also apply to kiwiberry [@luedeling2012].
+
+In studies that compared different chill models, the Dynamic model was considered generally the best at predicting the end of endodormancy, although it also is not always accurate due to the inherent difficulty of modeling a complex physiological process with only time and temperature [@luedeling2012]. To combat this uncertainty, using chill ranges (such as 20-24 CP) to account for the environmental differences in chilling requirement of the same cultivar planted on different sites instead of a definitive chill requirement (such as 20 CP) has been proposed but not widely adopted [@egea2020 ; @kaufmann2017].
+
+Chill requirements vary considerably among species and cultivars. Within commercial kiwifruit (A. chinensis) using the Chill Hours model, cv. “Hayward” requires at least 950 chill hours to complete endodormancy, cv. ‘Bruno’ requires about 700 chill hours, and cv. ‘Zesy002’ requires only 400-600 chill hours [@paringatai-hare2023]. Some accessions of hardier Actinidia species, such as A. rufa, require only 200 hours [@paringatai-hare2023]. While the chill requirement of various Chinese cultivars of kiwiberry (A. arguta) range from 650-1,050 hours [@1stchin2019], the chill requirement of some Japanese kiwiberry varieties is only about 200 chill hours, suggesting significant diversity for the trait within the gene pool [@paringatai-hare2023; @phivnil2004]. However, no chill requirements have been published for the only kiwiberry cultivar recommended for US producers, 'Geneva 3' [@hale2019]
+
+Knowing a cultivar’s chill requirement is essential to determining its suitability to specific climates. If a chill requirement cannot be fulfilled reliably in a certain climate due to warm winter temperatures, the crop will not set fruit the following year [@liu2019]. Conversely, if the chill requirement is fulfilled very early in the winter season, the plant may be vulnerable to early spring temperature fluctuations that prompt growth early in the potential frost period, leaving it open to frost damage [@debersaques2015]. Knowledge of chill requirement is therefore critical to proper cultivar development, selection, and recommendation.
+
+As the climate warms and temperature zones shift, dormancy is ending earlier due to earlier higher temperatures, leaving plants vulnerable to frost for longer periods [@winkler2013; @dmuchowski2022] . Perennial crops require several years to reach the return on investment; if the risk of frost damage is perceived to delay return on investment too much, it may discourage growers from planting them. Cold damage is the 3rd highest cause of crop loss in the Northeast U.S. [@wolfe2018]. Frost damage was one of the two most commonly cited concerns among a group of northeastern farmers who planted kiwiberry in 2023 as part of the Nor’East Kiwiberries project under the guidance of the New Hampshire Agricultural Research Station.
+
+Current active methods to prevent frost damage, such as overhead irrigation systems and wind machines, are resource-heavy and expensive [@poling2008; @snyder2005]. While the chill requirements of U.S. kiwiberry varieties are undefined, their early budbreak increases susceptibility to frost damage. Kiwiberry vines often break dormancy before the last frost [@debersaques2015]. Frost damage can eliminate a year’s kiwiberry crop, as observed at the UNH Woodman farm in May 2022. Therefore, frost damage mitigation strategies are necessary to overcome the danger of frost to commercial kiwiberry plantings [@debersaques2015; @calvez2015].
+
+Frost mitigation strategies are generally broken into two categories: passive and active. Passive strategies are implemented before a frost event occurs in order to avoid the use of active mitigation strategies. Some examples include: choosing a planting site where frost risk is low, planting crops and cultivars that are better adapted to withstand frost (including crops with appropriate chill requirements and cultivars that bloom later in the season), late pruning to prevent early budbreak, and using plant covers . Active methods are actions taken during a frost event to reduce frost damage, typically by manipulating plant or air temperature. Some active frost management methods include: heaters, wind machines, helicopters, surface irrigation, and sprinklers. Most growers use a combination of active and passive methods[@snyder2005]. In a 2022 systematic review, water application via sprinkler during a frost event was the most consistently effective strategy for mitigating frost damage. However, this strategy is both management and resource-intensive, requiring constant air temperature monitoring and copious amounts of freshwater. The same review noted that there has been an recent increase in studies exploring the foliar application of different biochemicals, both before and during frost events, to prevent frost damage [@drepper2022].
+
+In areas where chill requirements are easily fulfilled, but frost risk is high, extending dormancy could be one strategy to protect kiwiberries, as plants become more vulnerable to frost after bud swell [@poling2008] . Various cultural or chemical methods might be used to manipulate a plant’s dormancy cycle. Application of plant growth hormones could extend or break dormancy when applied exogenously. For example, hydrogen cyanamide is used on kiwifruit to break plant dormancy in years in which chill requirements are not fulfilled [@mcpherson2001]. Some evidence in the literature points to exogenous gibberellic acid as a potential dormancy extender for kiwiberry when applied during ecodormancy [@lionakis1984; @zheng2018; @weaver1959]. Lionakis and Schwabe found that unrooted, partially chilled kiwifruit cuttings placed in a solution with low concentrations of gibberellic acid significantly extended dormancy [@lionakis1984]. Gibberellic acid was also found to significantly extend dormancy in grapes in two field experiments [@zheng2018; @weaver1959] . Determining if gibberellic acid can protect against spring frosts by extending dormancy would reduce the risk of kiwiberry adoption for growers.
+
+[**Methods**]{.underline}
+
+*Experiment 1: Determining the chill requirement of 'Geneva 3' Kiwiberry*
+
+Three blocks of two mature 'Geneva 3’ kiwiberry vines each, located at the UNH Woodman Farm, Durham, NH, USA, were used. On each vine, 24 12-bud cuttings of were identified. First year laterals were preferred; however, due to the lack of renewal on some plants, first year spurs were substituted as necessary. Cuttings were randomly assigned to one of eight groups, 25, 30, 35, 40, 45, 50, 60, and 80 chill portions (CP). Each vine contributed three laterals to each treatment group.
+
+Using the R package Chill Models [@pertille2019] and average hourly temperature data from the Woodman Farm weather station, accumulated chill portions were calculated daily starting November 2023. The start date for the model was August 1, 2023.
+
+As each CP threshold was reached over winter 2023-24, the cuttings assigned to that group were collected by cutting between the 12^th^ and 13^th^ bud, and placed in quart-size mason jars with 1 inch of water. Jars were kept in the lab at room temperature (65-75 degrees Fahrenheit) under continuous light. Water was replaced every three days, and shoots were trimmed ½ cm every six days.
+
+The top 10 buds of each cutting were assessed for budbreak every three days for four weeks. Budbreak is defined as BBCH 07, when the bud is swollen and green (green tip) [@vanlabeke].
+
+At the end of four weeks, the percentage of buds broken out of 180 potential buds was calculated. Chill requirement was considered fulfilled when greater than 50% of buds broke in 4 weeks and the percentage of buds broken between two time points roughly plateaued [@phivnil2004]. Budbreak data was fit to a regression curve to create a model to predict chill requirement [@parkes2020] .
+
+*Experiment 2: Exploring the effect of winter application of gibberllic acid on spring budbreak in 'Meader Female' and 'Ananasnaya' kiwiberry*
+
+16 mature kiwiberry vines broken into 4 blocks of four vines each at the UNH Woodman Farmwere used. There were two vines of two varieties, ‘Meader Female’ and ‘Ananasnaya’ in each block.
+
+Within each block, one ‘Meader Female’ and one ‘Ananasnaya’ were designated as the treatment vines and the remaining two were control vines.
+
+Within each control vine, two laterals, one facing north and one south, were marked and the number of buds per lateral were counted.
+
+Within each treatment vine, 8 first-year laterals, 4 facing north and 4 south were chosen. Each of the four laterals on a side (north or south) were randomly assigned a treatment: control, low GA~3~ concentration (10 ppm), medium GA3 concentration (100 ppm), and high GA3 concentration (1000 ppm) and marked with corresponding tags. This range was chosen based on prior studies in which gibberellic acid delayed budbreak. In Lionakis and Schwabe, 1984, a GA3 concentration of 100 ppm was found effective in delaying budbreak in kiwifruit (*A. chinensis*, cv. ‘Bruno’) when 40-50 cm long unrooted cuttings were stood in a solution. A further experiment testing a range of GA3 concentration on single-bud cuttings showed that concentrations of 6.25, 25, 100, 400, and 1600 ppm all significantly delayed budbreak, with 25 ppm and above preventing it completely, although 1600 ppm proved lethal to the cuttings. In a field study on grape (*Vitis vinifera* cv. Early sweet), a spray application of 10 ppm of GA3 resulted in a significant delay in bud break (Zheng et al., 2018). Number of buds on each lateral were counted.
+
+On February 10, 2024, vines were brushed with the corresponding treatment solution of 0 ppm, 10ppm, 100 ppm, or 1000ppm GA~3~. All treatments had 0.02% Tween 20. A brush application was chosen over a spray application to reduce drift between treatments.
+
+Staring April 1, 2024, laterals were assessed every other day for budbreak (BBCH 09). When 30% of the buds on a given lateral reached BBCH 09, that was determined to be the day of budbreak for that lateral. This continued until all laterals reached budbreak on May 15, 2024.
+
+[**Results**]{.underline}
+
+***Experiment 1: Determining the chill requirement of 'Geneva 3' Kiwiberry***
+
+```{r, echo=FALSE}
+
+WeatherData2023<- read.csv("C:/Users/zrrob/OneDrive/Desktop/Kiwiberry/Historical Temp Data/WeatherData2023.csv")
+
+library(ChillModels)
+library(lubridate)
+library(tidyverse)
+
+WeatherData2023$ChillPortions<- dynamic_model(WeatherData2023$TempC, total = FALSE)
+WeatherData2023$Accum_CP<- ave(WeatherData2023$ChillPortions, FUN=cumsum)
+
+WeatherData2023 <- WeatherData2023 %>%
+  mutate(Time = mdy_hm(Time), 
+         day = day(Time),
+         month = month(Time), 
+         year = year(Time),
+         hour = hour(Time),
+         minute = minute(Time))
+ 
+
+marks_no_sci <- function(x) format(x, big.mark = ",", decimal.mark = ".", scientific = FALSE)
+
+ggplot(data = WeatherData2023, aes(x=Time)) +
+  geom_bar(aes(y=TempF), stat="identity") +
+  geom_line(aes(y=Accum_CP), linewidth = 2, color="red") +
+  scale_y_continuous(labels = marks_no_sci, name = "Temperature (F) and Accumulated Chill Portions")+
+  xlab("August 1, 2023- February 20, 2024")+
+  ggtitle("Figure 1. Temperature vs Accumulated Chill Portions Over Time")
+
+# WeatherData2023<-WeatherData2023 %>% 
+# filter(Accum_CP>0)
+# 
+# WeatherData2023<-WeatherData2023 %>% 
+#   group_by(day, month, year) %>% 
+#   summarise(avg_TempC= mean(TempC), avg_accum_cp= mean(Accum_CP))
 ```
 
-You can add options to executable code like this
+Laterals were collected on November 16 for 25 CP, November 22 for 30 CP, December 1 for 35 CP, December 8 for 40 CP, December 17 for 45 CP, December 23rd for 50 CP, January 10 for 60 CP, and February 22 for 80 CP shoots . At the end of 4 weeks, there was 0%, 0%, 1.6%, 14%, 47%, 42%, 38%, and 26% of buds burst, respectively (Table 1).
 
-```{r}
-#| echo: false
-2 * 2
+```{r, echo=FALSE, warning=FALSE}
+chill<- read.csv("C:/Users/zrrob/OneDrive/Desktop/Kiwiberry/Chill requirement methods/chill.csv", header = TRUE)
+
+library(knitr)
+library(tidyverse)
+library(lubridate)
+
+ChillData<-chill %>% 
+  group_by(Treatment) %>% 
+  summarise(N_Buds_burst= sum(Number_buds))
+
+ChillData$Percent_BudsBurst<- (ChillData$N_Buds_burst/180)*100
+
+ChillData$Date_Collected<- c("November 16", "November 22", "December 1", "December 8", "December 17", "December 23", "January 10", "February 22")
+
+kable( ChillData, format= "pipe", digits=3,row.names = FALSE, col.names = c("Number of Chill Portions", "Number of Buds Burst (out of 180)", "Percent Budburst", "Date collected"), align= "c", caption = "Chill Portion Data")
+
+
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+This data implies that the vines entered ecodormancy sometime between 40 and 45 CP. As shown in Figure 2, there was a large jump in budburst between 40 and 45 CP.
+
+```{r, echo=FALSE}
+# ggplot(data=ChillData, aes(x=factor(Date_Collected, levels = ChillData$Date_Collected), y=Percent_BudsBurst))+
+#   geom_col()+
+#   guides(x =  guide_axis(angle = 45))+
+#   labs(x= "Date Collected", y= "Percent Budburst")+
+#   ggtitle("Figure 2. Budburst 4 Weeks Post-Collection")
+
+ChillData$Treatment<-as.factor(ChillData$Treatment)
+
+barchartCP <- ggplot(data = ChillData, aes(x = Treatment, y = Percent_BudsBurst)) +
+  geom_col() +
+  labs(x = "Number of Chill Portions", y = "Percent Budburst") +
+  ggtitle("Figure 2. Budburst 4 Weeks Post-Collection")
+
+ggsave("barchartCP.png", plot = barchartCP, width = 20, height = 16)
+```
+
+```{r, echo=FALSE}
+# library(lme4)
+# chill_no_zero<- chill %>% 
+#   filter(Treatment%in% c("35", "40", "45", "50", "60", "80"))
+# logistic_mod<- glmer(Budburst~ Treatment + (1| Vine.Number), data= chill_no_zero, family= binomial(link="logit"))
+# summary(logistic_mod)
+# 
+# 
+# logistic_mod<- glmer(Budburst~ Treatment + (1| Vine.Number), data= chill, family= binomial(link="logit"))
+# summary(logistic_mod)
+
+logistic_mod_binomial<- glm(Budburst~Treatment, data=chill, family= 'binomial')
+
+#summary(logistic_mod_binomial)
+#plot(logistic_mod_binomial)
+
+```
+
+Using a logistic model, logit(P)= B~0~+ B~chill portions~X~chill portions~, the effect of chill portions on budbreak of Geneva 3 kiwiberry approached the traditional limits of significance (p=0.06696). More data will be taken when the experiment is repeated during Winter 2024-25.
+
+***Experiment 2: Exploring the effect of winter application of gibberllic acid on spring budbreak in 'Meader Female' and 'Ananasnaya' kiwiberry***
+
+For experiment 2, we used a randomized complete block split-split-split experimental design, where the first split was variety ('Ananasnaya' or 'Meader Female'), the second split was aspect (whether the laterals were facing north or south, and the third split was gibberellic acid treatment (either 0, 10, 100, or 1000 ppm). Therefore, the linear model was:
+
+*Date of Budbreak= Block + Variety + Block:Variety + Aspect + Variety:Aspect + Block:Variety:Aspect + GA~3~ Treatment + Variety: GA~3~ Treatment + Aspect: GA~3~ Treatment +Variety:Aspect: GA~3~ Treatment*
+
+No interactions were found to be significant.
+
+As shown in the ANOVA results below, there was no significant difference in the date of spring budbreak between different varieties of kiwiberry, or between laterals that faced different directions. There was also no significant difference in the date of spring budbreak between different gibberellic acid treatments.
+
+```{r, echo=FALSE, results=FALSE}
+data<- read.csv("C:/Users/zrrob/OneDrive/Desktop/Kiwiberry/GA Methods/gadata_splitsplit_2024_v2.csv")
+
+#Data setup
+data$block<- as.factor(data$block)
+data$variety<- as.factor(data$variety)
+data$aspect<-as.factor (data$aspect)
+data$ga_trtrmt<- as.factor(data$ga_trtrmt)
+
+
+
+#ANOVA Module and LSM WITH MISSING DATA
+ga_mod<-lm(budbreak ~ block +variety + variety:block 
+            + aspect + variety:aspect +block:variety:aspect 
+            +ga_trtrmt + variety:ga_trtrmt + aspect:ga_trtrmt 
+            +variety:aspect:ga_trtrmt , data)
+library(car)
+Anova(ga_mod)
+library(emmeans)
+lsm_ga_trtmt <- emmeans(ga_mod, "ga_trtrmt")
+lsm_ga_trtmt
+
+
+Avg_budbreak_by_variety<-aggregate(data$budbreak, list(data$variety), mean)
+Avg_budbreak_by_GAtrtmt<-aggregate(data$budbreak, list(data$ga_trtrmt), mean)
+
+#FValues for factors- Variety and Aspect custom F tests. Ga_trtmt uses residual error
+Anova(ga_mod)
+d <- Anova(ga_mod)$Df
+SS <- Anova(ga_mod)$SumSq
+
+#Fvalue factor A- variety
+F_A_num <- 51.98
+F_A_den <- 9.1667
+F_A<- F_A_num/F_A_den
+df_A_num <- 1
+df_A_den <- 3
+p_A <- pf(F_A, df_A_num, df_A_den, lower.tail = FALSE)
+p_A
+#FValue block
+F_block_num <- 22.8633
+F_block_den <- 9.1667
+F_block<- F_block_num/F_block_den
+df_block_num <- 3
+df_block_den <- 3
+p_block <- pf(F_block, df_block_num, df_block_den, lower.tail = FALSE)
+p_block
+
+#FValue Factor B
+F_B_num <- 14.208139
+F_B_den <- 16.990171 
+F_B<- F_B_num/F_B_den
+df_B_num <- 1
+df_B_den <- 6
+p_B <- pf(F_B, df_B_num, df_B_den, lower.tail = FALSE)
+p_B
+#FValue block
+F_ABinteraction_num <- 14.88
+F_ABinteraction_den <- 16.990171
+F_ABinteraction<- F_ABinteraction_num/F_ABinteraction_den
+df_ABinteraction_num <- 1
+df_ABinteraction_den <- 6
+p_ABinteraction <- pf(F_ABinteraction, df_ABinteraction_num, df_ABinteraction_den, lower.tail = FALSE)
+p_ABinteraction
+
+
+
+```
+
+ANOVA Table
+
+```         
+Response: budbreak
+```
+
+```         
+                         Sum Sq Df Mean Square F value  Pr(>F)
+```
+
+```         
+block                     68.59  3  22.8633    2.494 0.2363104
+```
+
+```         
+variety                   51.98  1  51.98      5.67 0.09750455
+```
+
+```         
+        block:variety     27.50  3  9.1667     
+```
+
+```         
+aspect                    13.59  1  13.59      0.8363 0.3957319
+```
+
+```         
+variety:aspect            14.88  1  14.88      0.8758 0.3854739
+```
+
+```         
+  block:variety:aspect    100.52  6  16.75     
+```
+
+```         
+ga_trtrmt                 55.37  3  18.457     1.4061 0.25733
+```
+
+```         
+variety:ga_trtrmt         40.97  3  13.66      1.0406 0.38668
+```
+
+```         
+aspect:ga_trtrmt           9.74  3  3.25       0.2474 0.86261
+```
+
+```         
+variety:aspect:ga_trtrmt  35.97  3  11.99      0.9135 0.44441
+```
+
+```         
+Residuals                459.39 35   
+```
+
+As shown in figure 3, although the 1000ppm GA~3~ treatment had a slight lag in budbreak, there was no significant difference in treatments.
+
+```{r, echo=FALSE}
+GA2024<- data %>% 
+  drop_na()
+
+GA2024$ga_trtrmt<-as.factor(GA2024$ga_trtrmt)
+
+# GA concentrations versus budbreak date
+ggplot(GA2024, mapping = aes(x=ga_trtrmt, y=budbreak))+
+  geom_boxplot()+
+  xlab("Gibberellic Acid Treatment (ppm)")+
+  ylab("Day of 30% Budbreak, Day 0=4/18/24")+
+  ggtitle("Figure 3. Effect of Winter Gibberellic Acid Application on Spring Budbreak")
+# Variety versus budbreak date
+ggplot(GA2024, mapping = aes(x=variety, y=budbreak))+
+  geom_boxplot()+
+  xlab("Kiwiberry Variety")+
+  ylab("Day of 30% Budbreak, Day 0=4/18/24")+
+  ggtitle("Figure 4. Effect of Kiwiberry Variety on Spring Budbreak")
+```
+
+The 'Meader Female' kiwiberry variety was observed to break about one day later than the 'Ananasnaya' variety (figure 4), but the difference was not significant.
+
+[**Discussion**]{.underline}
+
+Works Cited
