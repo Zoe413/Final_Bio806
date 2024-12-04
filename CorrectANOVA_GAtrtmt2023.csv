@@ -1,0 +1,12 @@
+Variable,Sum Sq,DF,Mean Square,F value,Pr (>F)
+Block,68.59,3,22.86,2.494,0.2363104
+Variety,51.98,1,51.98,5.67,0.09750455
+Block:Variety,27.5,3,9.17,,
+Aspect,13.59,1,13.59,0.8363,0.3957319
+Variety:Aspect,14.88,1,14.88,0.8758,0.3854739
+Block:Variety:Aspect,100.52,6,16.75,,
+Gibberellic Acid Treatment,55.37,3,18.46,1.4061,0.25733
+Variety:Gibberellic Acid Treatment,40.97,3,13.66,1.0406,0.38668
+Aspect: Gibberellic Acid Treatment,9.74,3,3.25,0.2474,0.86261
+Variety:Aspect:Gibberellic Acid Treatment,35.97,3,11.99,0.9135,0.44441
+Residuals,459.39,35,,,

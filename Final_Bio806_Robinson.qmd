@@ -20,7 +20,11 @@ knitr::opts_chunk$set(echo = TRUE,tidy.opts=list(width.cutoff=30), tidy=TRUE)
 
 [**Introduction**]{.underline}
 
-Many woody perennials originating in temperate climates require a certain period of cold temperatures to successfully flower and fruit the following season [@lang1987]. This period is called dormancy, the temporary cessation of visible growth, and is generally triggered by short daylength and/or cold nighttime temperatures [@fadón2020; @liu2019]. Dormancy can be split into two phases: endodormancy, or true dormancy, and ecodormancy. Endodormancy is mediated by endogenous plant-hormones. The plant will not grow even if environmental conditions favor growth, until a certain amount of chill, known as the chill requirement, has been experienced by the plant. The chill requirement is defined as the lowest number of units of cold temperature, usually between 32 and 45 degrees Fahrenheit, needed for a plant to end endodormancy and grow again when exposed to favorable conditions [@winkler2013]. The type of unit used depends on the chill model, and could be chill hours, chill units, or chill portions [@luedeling2012]. After the chilling requirement has been fulfilled, the plant shifts from endodormancy to ecodormancy, where growth is prevented only by unfavorable environmental conditions [@lang1987; @parkes2020]. Once temperatures increase in the spring, growth resumes [@fadón2020; @liu2019].
+No plant can grow in every climate. Plants have adopted to their native conditions through evolution, and will not grow if the climate is significantly different than the one they have adapted to. If the desired growing location for a plant has a significantly different climate than the target plant's native climate, either the environment around the plant must be modified (such as by using a greenhouse), or the plant itself must be manipulated (such as by using dormancy-breaking sprays to change the plant's natural dormancy cycle) [@grubinger2015; @mcpherson2001]. Horticultural traits to consider when matching plants to climate conditions include winter hardiness, preferred amount of rainfall, preferred soil type, preferred amount of light, susceptibility to heat stress, chill requirement, etc [@usda, @parkes2020].
+
+Many woody perennials originating in temperate climates require a certain period of cold temperatures to successfully flower and fruit the following season [@lang1987]. This period is called dormancy, the temporary cessation of visible growth, and is generally triggered by short daylength and/or cold nighttime temperatures [@fadón2020; @liu2019]. Characterizing the dormancy cycle of fruit crops is important because it helps determine the range of the crop, especially the southernmost boundary in the northern hemisphere.
+
+Dormancy can be split into two phases: endodormancy, or true dormancy, and ecodormancy. Endodormancy is mediated by endogenous plant-hormones. The plant will not grow even if environmental conditions favor growth, until a certain amount of chill, known as the chill requirement, has been experienced by the plant. The chill requirement is defined as the lowest number of units of cold temperature, usually between 32 and 45 degrees Fahrenheit, needed for a plant to end endodormancy and grow again when exposed to favorable conditions [@winkler2013]. The type of unit used depends on the chill model, and could be chill hours, chill units, or chill portions [@luedeling2012]. After the chilling requirement has been fulfilled, the plant shifts from endodormancy to ecodormancy, where growth is prevented only by unfavorable environmental conditions [@lang1987; @parkes2020]. Once temperatures increase in the spring, growth resumes [@fadón2020; @liu2019].
 
 ![](Basic%20Dormancy%20cycle%20of%20Woody%20Perennials.png){fig-align="center" width="400"}
 
@@ -36,15 +40,20 @@ In studies that compared different chill models, the Dynamic model was considere
 
 Chill requirements vary considerably among species and cultivars. Within commercial kiwifruit (A. chinensis) using the Chill Hours model, cv. “Hayward” requires at least 950 chill hours to complete endodormancy, cv. ‘Bruno’ requires about 700 chill hours, and cv. ‘Zesy002’ requires only 400-600 chill hours [@paringatai-hare2023]. Some accessions of hardier Actinidia species, such as A. rufa, require only 200 hours [@paringatai-hare2023]. While the chill requirement of various Chinese cultivars of kiwiberry (A. arguta) range from 650-1,050 hours [@1stchin2019], the chill requirement of some Japanese kiwiberry varieties is only about 200 chill hours, suggesting significant diversity for the trait within the gene pool [@paringatai-hare2023; @phivnil2004]. However, no chill requirements have been published for the only kiwiberry cultivar recommended for US producers, 'Geneva 3' [@hale2019]
 
-Knowing a cultivar’s chill requirement is essential to determining its suitability to specific climates. If a chill requirement cannot be fulfilled reliably in a certain climate due to warm winter temperatures, the crop will not set fruit the following year [@liu2019]. Conversely, if the chill requirement is fulfilled very early in the winter season, the plant may be vulnerable to early spring temperature fluctuations that prompt growth early in the potential frost period, leaving it open to frost damage [@debersaques2015]. Knowledge of chill requirement is therefore critical to proper cultivar development, selection, and recommendation.
+Knowing a cultivar’s chill requirement is essential to determining its suitability to specific climates. If a chill requirement cannot be fulfilled reliably in a certain climate due to warm winter temperatures, the crop will not set fruit the following year [@liu2019]. Chemical sprays may be necessary to force the end of dormancy. For example, hydrogen cyanamide is routinely used in countries such as New Zealand to combat inadaquate chilling in kiwifruit (actinidia deliciosa) [@mcpherson2001]. Conversely, if the chill requirement is fulfilled very early in the winter season, the plant may be vulnerable to early spring temperature fluctuations that prompt growth early in the potential frost period, leaving it open to frost damage [@debersaques2015]. Knowledge of chill requirement is therefore critical to proper cultivar development, selection, and recommendation.
 
 As the climate warms and temperature zones shift, dormancy is ending earlier due to earlier higher temperatures, leaving plants vulnerable to frost for longer periods [@winkler2013; @dmuchowski2022] . Perennial crops require several years to reach the return on investment; if the risk of frost damage is perceived to delay return on investment too much, it may discourage growers from planting them. Cold damage is the 3rd highest cause of crop loss in the Northeast U.S. [@wolfe2018]. Frost damage was one of the two most commonly cited concerns among a group of northeastern farmers who planted kiwiberry in 2023 as part of the Nor’East Kiwiberries project under the guidance of the New Hampshire Agricultural Research Station.
 
 Current active methods to prevent frost damage, such as overhead irrigation systems and wind machines, are resource-heavy and expensive [@poling2008; @snyder2005]. While the chill requirements of U.S. kiwiberry varieties are undefined, their early budbreak increases susceptibility to frost damage. Kiwiberry vines often break dormancy before the last frost [@debersaques2015]. Frost damage can eliminate a year’s kiwiberry crop, as observed at the UNH Woodman farm in May 2022. Therefore, frost damage mitigation strategies are necessary to overcome the danger of frost to commercial kiwiberry plantings [@debersaques2015; @calvez2015].
 
-Frost mitigation strategies are generally broken into two categories: passive and active. Passive strategies are implemented before a frost event occurs in order to avoid the use of active mitigation strategies. Some examples include: choosing a planting site where frost risk is low, planting crops and cultivars that are better adapted to withstand frost (including crops with appropriate chill requirements and cultivars that bloom later in the season), late pruning to prevent early budbreak, and using plant covers . Active methods are actions taken during a frost event to reduce frost damage, typically by manipulating plant or air temperature. Some active frost management methods include: heaters, wind machines, helicopters, surface irrigation, and sprinklers. Most growers use a combination of active and passive methods[@snyder2005]. In a 2022 systematic review, water application via sprinkler during a frost event was the most consistently effective strategy for mitigating frost damage. However, this strategy is both management and resource-intensive, requiring constant air temperature monitoring and copious amounts of freshwater. The same review noted that there has been an recent increase in studies exploring the foliar application of different biochemicals, both before and during frost events, to prevent frost damage [@drepper2022].
+Frost mitigation strategies are generally broken into two categories: passive and active. Passive strategies are implemented before a frost event occurs in order to avoid the use of active mitigation strategies. Some examples include: choosing a planting site where frost risk is low, planting crops and cultivars that are better adapted to withstand frost (including crops with appropriate chill requirements and cultivars that bloom later in the season), late pruning to prevent early budbreak, and using plant covers. Active methods are actions taken during a frost event to reduce frost damage, typically by manipulating plant or air temperature. Some active frost management methods include: heaters, wind machines, helicopters, surface irrigation, and sprinklers. Most growers use a combination of active and passive methods[@snyder2005]. In a 2022 systematic review, water application via sprinkler during a frost event was the most consistently effective strategy for mitigating frost damage [@drepper2022]. However, this strategy is both management and resource-intensive, requiring constant air temperature monitoring and copious amounts of freshwater. The same review noted that there has been an recent increase in studies exploring the foliar application of different biochemicals, both before and during frost events, to prevent frost damage [@drepper2022].
 
-In areas where chill requirements are easily fulfilled, but frost risk is high, extending dormancy could be one strategy to protect kiwiberries, as plants become more vulnerable to frost after bud swell [@poling2008] . Various cultural or chemical methods might be used to manipulate a plant’s dormancy cycle. Application of plant growth hormones could extend or break dormancy when applied exogenously. For example, hydrogen cyanamide is used on kiwifruit to break plant dormancy in years in which chill requirements are not fulfilled [@mcpherson2001]. Some evidence in the literature points to exogenous gibberellic acid as a potential dormancy extender for kiwiberry when applied during ecodormancy [@lionakis1984; @zheng2018; @weaver1959]. Lionakis and Schwabe found that unrooted, partially chilled kiwifruit cuttings placed in a solution with low concentrations of gibberellic acid significantly extended dormancy [@lionakis1984]. Gibberellic acid was also found to significantly extend dormancy in grapes in two field experiments [@zheng2018; @weaver1959] . Determining if gibberellic acid can protect against spring frosts by extending dormancy would reduce the risk of kiwiberry adoption for growers.
+In areas where chill requirements are easily fulfilled, but frost risk is high, extending dormancy could be one strategy to protect kiwiberries, as plants become more vulnerable to frost after bud swell [@poling2008]. Various cultural or chemical methods might be used to manipulate a plant’s dormancy cycle. Application of plant growth hormones could extend or break dormancy when applied exogenously. For example, hydrogen cyanamide is used on kiwifruit to break plant dormancy in years in which chill requirements are not fulfilled [@mcpherson2001]. Some evidence in the literature points to exogenous gibberellic acid as a potential dormancy extender for kiwiberry when applied during ecodormancy [@lionakis1984; @zheng2018; @weaver1959]. Lionakis and Schwabe found that unrooted, partially chilled kiwifruit cuttings placed in a solution with low concentrations of gibberellic acid significantly extended dormancy [@lionakis1984]. Gibberellic acid was also found to significantly extend dormancy in grapes in two field experiments [@zheng2018; @weaver1959] . Determining if gibberellic acid can protect against spring frosts by extending dormancy would reduce the risk of kiwiberry adoption for growers.
+
+*Experimental Objectives:*
+
+1.  Estimate the chill requirement of ‘Geneva 3’ kiwiberry using the Dynamic model. If the percent budbreak significantly increases between two chill portion points, then plateaus in subsequent cuttings, then the chill requirement is likely between those two points.
+2.  Observe whether a delay of budbreak and/or flowering occurs after applying exogenous gibberellic acid at various concentrations onto kiwiberry laterals during ecodormancy.
 
 [**Methods**]{.underline}
 
@@ -78,7 +87,7 @@ Staring April 1, 2024, laterals were assessed every other day for budbreak (BBCH
 
 ***Experiment 1: Determining the chill requirement of 'Geneva 3' Kiwiberry***
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, fig.cap= "Average temperature over time compared to accumulated chill portions over time. The red line denotes accumulated chill portions."}
 
 WeatherData2023<- read.csv("C:/Users/zrrob/OneDrive/Documents/Final_Bio806/WeatherData2023.csv")
 
@@ -101,12 +110,13 @@ WeatherData2023 <- WeatherData2023 %>%
 
 marks_no_sci <- function(x) format(x, big.mark = ",", decimal.mark = ".", scientific = FALSE)
 
+
 ggplot(data = WeatherData2023, aes(x=Time)) +
   geom_bar(aes(y=TempF), stat="identity") +
   geom_line(aes(y=Accum_CP), linewidth = 2, color="red") +
-  scale_y_continuous(labels = marks_no_sci, name = "Temperature (F) and Accumulated Chill Portions")+
+  scale_y_continuous(labels = marks_no_sci, name = "Temperature (F) and Accumulated Chill Portions") +
   xlab("August 1, 2023- February 20, 2024")+
-  ggtitle("Figure 1. Temperature vs Accumulated Chill Portions Over Time")
+  ggtitle("Temperature vs Accumulated Chill Portions Over Time")
 
 # WeatherData2023<-WeatherData2023 %>% 
 # filter(Accum_CP>0)
@@ -140,7 +150,7 @@ kable( ChillData, format= "pipe", digits=3,row.names = FALSE, col.names = c("Num
 
 This data implies that the vines entered ecodormancy sometime between 40 and 45 CP. As shown in Figure 2, there was a large jump in budburst between 40 and 45 CP.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, fig.cap= "Percent Budburst of kiwiberry laterals 4 weeks post-collection. After being taken in from the field, laterals were placed in water under continuous light and assessed for budbreak after 4 weeks."}
 # ggplot(data=ChillData, aes(x=factor(Date_Collected, levels = ChillData$Date_Collected), y=Percent_BudsBurst))+
 #   geom_col()+
 #   guides(x =  guide_axis(angle = 45))+
@@ -152,7 +162,7 @@ ChillData$Treatment<-as.factor(ChillData$Treatment)
 ggplot(data = ChillData, aes(x = Treatment, y = Percent_BudsBurst)) +
   geom_col() +
   labs(x = "Number of Chill Portions", y = "Percent Budburst") +
-  ggtitle("Figure 2. Budburst 4 Weeks Post-Collection")
+  ggtitle("Budburst 4 Weeks Post-Collection")
 
 ```
 
@@ -184,7 +194,7 @@ For experiment 2, we used a randomized complete block split-split-split experime
 
 No interactions were found to be significant.
 
-As shown in the ANOVA results below, there was no significant difference in the date of spring budbreak between different varieties of kiwiberry, or between laterals that faced different directions. There was also no significant difference in the date of spring budbreak between different gibberellic acid treatments.
+As shown in the ANOVA results below (Table 2), there was no significant difference in the date of spring budbreak between different varieties of kiwiberry, or between laterals that faced different directions. There was also no significant difference in the date of spring budbreak between different gibberellic acid treatments.
 
 ```{r, echo=FALSE, results=FALSE}
 data<- read.csv("C:/Users/zrrob/OneDrive/Documents/Final_Bio806/gadata_splitsplit_2024_v2.csv")
@@ -252,66 +262,24 @@ p_ABinteraction <- pf(F_ABinteraction, df_ABinteraction_num, df_ABinteraction_de
 p_ABinteraction
 
 
-
 ```
-
-ANOVA Table
-
-```         
-Response: budbreak
-```
-
-```         
-                         Sum Sq Df Mean Square F value  Pr(>F)
-```
-
-```         
-block                     68.59  3  22.8633    2.494 0.2363104
-```
-
-```         
-variety                   51.98  1  51.98      5.67 0.09750455
-```
-
-```         
-        block:variety     27.50  3  9.1667     
-```
-
-```         
-aspect                    13.59  1  13.59      0.8363 0.3957319
-```
-
-```         
-variety:aspect            14.88  1  14.88      0.8758 0.3854739
-```
-
-```         
-  block:variety:aspect    100.52  6  16.75     
-```
-
-```         
-ga_trtrmt                 55.37  3  18.457     1.4061 0.25733
-```
-
-```         
-variety:ga_trtrmt         40.97  3  13.66      1.0406 0.38668
-```
-
-```         
-aspect:ga_trtrmt           9.74  3  3.25       0.2474 0.86261
-```
-
-```         
-variety:aspect:ga_trtrmt  35.97  3  11.99      0.9135 0.44441
-```
-
-```         
-Residuals                459.39 35   
-```
-
-As shown in figure 3, although the 1000ppm GA~3~ treatment had a slight lag in budbreak, there was no significant difference in treatments.
 
 ```{r, echo=FALSE}
+CorrectANOVA<- read.csv("C:/Users/zrrob/OneDrive/Documents/Final_Bio806/CorrectANOVA_GAtrtmt2023.csv")
+
+CorrectANOVA <- CorrectANOVA %>% mutate_all(~ifelse(is.na(.), "", .))
+
+library(kableExtra)
+
+
+kable(CorrectANOVA, na = "", col.names = c("Variable", "Sum Sq", "DF", "Mean Square", "F Value", "Pr (>F)")) %>% 
+  kable_styling()%>% 
+  add_header_above(c("Table 2. ANOVA: Response = Budbreak Date" = 6))
+```
+
+As shown in Figure 3, although the 1000ppm GA~3~ treatment had a slight lag in budbreak, there was no significant difference in treatments.
+
+```{r, echo=FALSE, fig.cap= "Effect of winter gibberellic acid application on spring budbreak. No significant differences were found between different gibberellic acid concentrations."}
 GA2024<- data %>% 
   drop_na()
 
@@ -322,16 +290,20 @@ ggplot(GA2024, mapping = aes(x=ga_trtrmt, y=budbreak))+
   geom_boxplot()+
   xlab("Gibberellic Acid Treatment (ppm)")+
   ylab("Day of 30% Budbreak, Day 0=4/18/24")+
-  ggtitle("Figure 3. Effect of Winter Gibberellic Acid Application on Spring Budbreak")
+  ggtitle("Effect of Winter Gibberellic Acid Application on Spring Budbreak")
+
+```
+
+```{r, echo=FALSE, fig.cap= "Effect of kiwiberry variety on spring budbreak. Although no significant difference was found between the budbreak of the two varieties,'Meader' was on average one day later than 'Ananasnaya'"}
 # Variety versus budbreak date
 ggplot(GA2024, mapping = aes(x=variety, y=budbreak))+
   geom_boxplot()+
   xlab("Kiwiberry Variety")+
   ylab("Day of 30% Budbreak, Day 0=4/18/24")+
-  ggtitle("Figure 4. Effect of Kiwiberry Variety on Spring Budbreak")
+  ggtitle("Effect of Kiwiberry Variety on Spring Budbreak")
 ```
 
-The 'Meader Female' kiwiberry variety was observed to break about one day later than the 'Ananasnaya' variety (figure 4), but the difference was not significant.
+The 'Meader Female' kiwiberry variety was observed to break about one day later than the 'Ananasnaya' variety (Figure 4), but the difference was not significant.
 
 [**Discussion**]{.underline}
 
