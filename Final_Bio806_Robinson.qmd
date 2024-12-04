@@ -22,6 +22,14 @@ knitr::opts_chunk$set(echo = TRUE,tidy.opts=list(width.cutoff=30), tidy=TRUE)
 
 No plant can grow in every climate. Plants have adopted to their native conditions through evolution, and will not grow if the climate is significantly different than the one they have adapted to. If the desired growing location for a plant has a significantly different climate than the target plant's native climate, either the environment around the plant must be modified (such as by using a greenhouse), or the plant itself must be manipulated (such as by using dormancy-breaking sprays to change the plant's natural dormancy cycle) [@grubinger2015; @mcpherson2001]. Horticultural traits to consider when matching plants to climate conditions include winter hardiness, preferred amount of rainfall, preferred soil type, preferred amount of light, susceptibility to heat stress, chill requirement, etc [@usda, @parkes2020].
 
+Kiwiberry (*Actinidia arguta* (Siebold et Zucc.) Planch), a small, hairless relative of the larger kiwifruit, *Actinidia deliciosa* (Ferguson & Huang, 2007; Strik, 2005), is native to eastern Siberia, Korea, Japan, and China (Williams et al., 2003). Introduced to the United States in 1877, kiwiberry was mainly used as an ornamental plant until the 1970s, when small amounts of commercial U.S. production blossomed (Hastings, 2018; Melo et al., 2017; Strik, 2005).
+
+Kiwiberry is a promising novel niche crop for New England because of its adaptability, flavor, nutrient profile, and unique marketable characteristics (Cossio et al., 2015). The species is  adapted to the climate, unlike their tropical counterpart, with comparable cold acclimation to other New England crops (Hastings, 2018; Williams et al., 2003). Few pest and disease problems are reported, making this crop adaptable to organic or low-spray systems (Hastings, 2018). Sugar and acid content are comparable to kiwifruit, with floral and fruity flavors that will appeal to consumers who enjoy tropical fruits (Boyes, 1997; Garcia et al., 2012; Hastings, 2018). The nutrient profile includes high vitamin C and calcium (Latocha, 2017). Finally, its small hairless appearance makes it ideal for snacking (Ferguson & Huang, 2007; Hastings, 2018). Consumer appeal has been established through marketability studies that show willingness to pay is similar to other fresh berries (Hastings, 2018; Wannemuehler et al., 2023).  In light of these merits, a kiwiberry research and breeding program was instituted in 2013 at the University of New Hampshire to explore its commercial potential for New England growers (Gula, 2019).
+
+Kiwiberry is not widely grown in the Northeastern United States. The U.S. agricultural census in 2017 reported 16 kiwifruit growers in the Northeast and seven in New York. Although the census does not distinguish between kiwifruit and kiwiberry, it is likely that these operations are growing kiwiberries because kiwifruit does not thrive in the above zone 7a (Gula, 2019; NC State Extension, n.d.).  Only 12 acres of kiwiberry production were reported to the United States Department of Agriculture Farm Service Agency (USDA FSA) for 2023; however, this is likely underreported as only farmers who participate in certain programs, including Agriculture Risk Coverage and Price Loss Coverage,  are obligated to report to the FSA (USDA, 2023). Hastings et al. 2018 attempted to quantify eastern US kiwiberry production but relied mainly on personal communications rather than a formalized survey. The authors reported that there was one farm with 20 acres of production and a small number of other farms with less than 1 acre in production (Hastings, 2018). Cultivars ‘Geneva 3’ and ‘Hardy Red’ are the only commercially recommended female varieties for North American production by the New Hampshire Agricultural Experiment Station (Hastings & Hale, 2021a). The largest grower in the northeast, KiwiKorners in Pennsylvania, have had success with cv. ‘Geneva 3’ under the marketing name ‘Passion Popper” (Laubach & Jackson, 2023).
+
+Lack of information on kiwiberry hampers its adoption in New England. Although kiwiberries have been successfully grown in New England, there is a dearth of research on several basic horticultural traits, such as chilling requirement, spring frost susceptibility, pollination, ripening patterns, fertilization requirements, and pruning effects (Hastings & Hale, 2021b). There is also a knowledge gap regarding kiwiberry yield, yield stability, and postharvest handling. Baseline knowledge on this novel crop is crucial for production, optimization, and adoption (Debersaques et al., 2015). Without it, it is difficult for growers to estimate the risks of kiwiberry production. Because vineyard establishment requires significant investment, including permanent infrastructure installations and land use, as well as a 5-7 year return on investment, the inability to determine risk due to lack of horticultural information lowers grower willingness to adopt kiwiberry.
+
 Many woody perennials originating in temperate climates require a certain period of cold temperatures to successfully flower and fruit the following season [@lang1987]. This period is called dormancy, the temporary cessation of visible growth, and is generally triggered by short daylength and/or cold nighttime temperatures [@fadón2020; @liu2019]. Characterizing the dormancy cycle of fruit crops is important because it helps determine the range of the crop, especially the southernmost boundary in the northern hemisphere.
 
 Dormancy can be split into two phases: endodormancy, or true dormancy, and ecodormancy. Endodormancy is mediated by endogenous plant-hormones. The plant will not grow even if environmental conditions favor growth, until a certain amount of chill, known as the chill requirement, has been experienced by the plant. The chill requirement is defined as the lowest number of units of cold temperature, usually between 32 and 45 degrees Fahrenheit, needed for a plant to end endodormancy and grow again when exposed to favorable conditions [@winkler2013]. The type of unit used depends on the chill model, and could be chill hours, chill units, or chill portions [@luedeling2012]. After the chilling requirement has been fulfilled, the plant shifts from endodormancy to ecodormancy, where growth is prevented only by unfavorable environmental conditions [@lang1987; @parkes2020]. Once temperatures increase in the spring, growth resumes [@fadón2020; @liu2019].
@@ -51,6 +59,8 @@ Frost mitigation strategies are generally broken into two categories: passive an
 In areas where chill requirements are easily fulfilled, but frost risk is high, extending dormancy could be one strategy to protect kiwiberries, as plants become more vulnerable to frost after bud swell [@poling2008]. Various cultural or chemical methods might be used to manipulate a plant’s dormancy cycle. Application of plant growth hormones could extend or break dormancy when applied exogenously. For example, hydrogen cyanamide is used on kiwifruit to break plant dormancy in years in which chill requirements are not fulfilled [@mcpherson2001]. Some evidence in the literature points to exogenous gibberellic acid as a potential dormancy extender for kiwiberry when applied during ecodormancy [@lionakis1984; @zheng2018; @weaver1959]. Lionakis and Schwabe found that unrooted, partially chilled kiwifruit cuttings placed in a solution with low concentrations of gibberellic acid significantly extended dormancy [@lionakis1984]. Gibberellic acid was also found to significantly extend dormancy in grapes in two field experiments [@zheng2018; @weaver1959] . Determining if gibberellic acid can protect against spring frosts by extending dormancy would reduce the risk of kiwiberry adoption for growers.
 
 *Experimental Objectives:*
+
+In order to encxourage wider adoption of kiwiberry as a fruit crop for New England, growers need information on basic horticultural traits and best management practices, such as chill requirement and frost management techniques. This paper aims to:
 
 1.  Estimate the chill requirement of ‘Geneva 3’ kiwiberry using the Dynamic model. If the percent budbreak significantly increases between two chill portion points, then plateaus in subsequent cuttings, then the chill requirement is likely between those two points.
 2.  Observe whether a delay of budbreak and/or flowering occurs after applying exogenous gibberellic acid at various concentrations onto kiwiberry laterals during ecodormancy.
@@ -290,7 +300,7 @@ ggplot(GA2024, mapping = aes(x=ga_trtrmt, y=budbreak))+
   geom_boxplot()+
   xlab("Gibberellic Acid Treatment (ppm)")+
   ylab("Day of 30% Budbreak, Day 0=4/18/24")+
-  ggtitle("Effect of Winter Gibberellic Acid Application on Spring Budbreak")
+  ggtitle("Effect of Winter GA3 Application on Spring Budbreak")
 
 ```
 
@@ -307,7 +317,15 @@ The 'Meader Female' kiwiberry variety was observed to break about one day later 
 
 [**Discussion**]{.underline}
 
-```{r, echo=FALSE}
+***Experiment 1: Determining the chill requirement of 'Geneva 3' Kiwiberry***
+
+Figure 5 (below), using weather data from weather stations reporting to the Network for Environment and Weather Applications (NEWA) [@carroll2020], showed that all randomly selected locations throughout the Eastern Seaboard reached at least 45 chill portions during Winter 2023-24, fulfilling the chilling requirement of 'Geneva 3' kiwiberry. In fact, even the southernmost point (Augusta, GA) reached 65 chill portions, suggesting that 45 chill portions is an achievable goal even in warmer climates. Therefore, future adoptees of this novel niche fruit crop could likely plant 'Geneva 3' kiwiberry in many locations throughout the northeastern United States without risking unfulfilled chill requirement and the need for hydrogen cyanamide applications, adding evidence to the claim that kiwiberry is a promising novel crop for that region.
+
+However, future studies will need to determine when the 'Geneva 3' chill requirement was fulfilled throughout the region. If chill requirement isfulfilled very early in the winter season, due to long periods in the optimal temperature range of 32-45 degrees Fahrenheit, that could cause increased risk of early budbreak and longer exposure to potential frost periods. For example, if budbreak is fulfilled in December, the kiwiberry vine could break bud during a 'false thaw' in January or February in southern areas, leaving it vulnearble to early spring frosts.
+
+Furthermore, chill requirement is not the only factor in determining crop suitability for a region. Future studies to determine other horticultural traits of 'Geneva 3' kiwiberry, such as susceptibility to heat and water stress, are needed to determine the optimal range.
+
+```{r, echo=FALSE, fig.cap= "Map of locations that reached the chill requirement of 'Geneva 3' kiwiberry during winter 2023-24 on the U.S. Eastern Seaboard"}
 library(ChillModels)
 WeatherDataMultiple <- read.csv("C:/Users/zrrob/OneDrive/Documents/Final_Bio806/MultipleLocation 2022-23 Weather Data.csv", header=TRUE, stringsAsFactors=FALSE)
 
@@ -335,7 +353,7 @@ legend_data <- data.frame(
   long = c(-71, -71),
   lat = c(33, 31),
   ChillPortions = c(46, 44),
-  Location = c("Fulfilled Estimated 'Geneva 3' Chill Requirement", "Did Not Fulfill Chill Requirement")
+  Location = c("Fulfilled Estimated 'Geneva 3' CR", "Did Not Fulfill CR")
 )
 
 library(ggrepel)
@@ -344,13 +362,12 @@ ggplot(mystates, aes(long, lat)) +
   geom_polygon(aes(group = group), fill = 'white', color = '#292c26', size= 0.5) +
   coord_fixed(ratio = 1) +
   geom_point(data = together, aes(x = long, y = lat, color = ifelse(ChillPortions > 45, "green", "red")), pch = 16, size = 3) +
-  geom_text_repel(data = together, aes(x = long, y = lat, label = Name), size = 3) +
   scale_color_identity()+
-  ggtitle("Locations that reached 45 Chill Portions Winter 2023-24")+
+  ggtitle("Locations that reached 45 Chill Portions", subtitle = "Winter 2023-34" )+
   xlab("Longitude")+
   ylab("Latitude")+
   geom_point(data = legend_data, aes(x = long, y = lat, color = ifelse(ChillPortions > 45, "green", "red")), pch = 16, size = 3) +
-  geom_text(data = legend_data, aes(x = long, y = lat, label = Location), vjust = -1, size = 3)+
+  geom_text(data = legend_data, aes(x = long, y = lat, label = Location), vjust = -1, size = 2)+
   theme(
     plot.title = element_text(size = 12, face = "bold"),
     axis.title.x = element_text(size = 12),
@@ -358,5 +375,19 @@ ggplot(mystates, aes(long, lat)) +
     axis.text = element_text(size = 12)
   )
 ```
+
+***Experiment 2: Exploring the effect of winter application of gibberllic acid on spring budbreak in 'Meader Female' and 'Ananasnaya' kiwiberry***
+
+There was no effect of gibberllic acid on spring budbreak date at any concentration for either 'Ananasnaya' or 'Meader Female' kiwiberry variety. Winter gibberllic acid application is not an effective protection method against spring frost. This could have been due to lack of absorption; in @lionakis1984, kiwifruit cuttings were observed to break bud after being placed in a solution of gibberllic acid, which would allow the gibberllicc acid to directly penetrate the vascular system of the cutting. Future studies could explore gibbrellic acid injection into vine trunks to determine if better absorption would have a greater effect.
+
+Timing may also not have been optimal. @lionakis1984 used shoot cuttings that were transitioning from endodormancy into ecodormancy. @zheng2018 also applied gibberellic acid in midwinter. Due to lack of information on chill requirement, application in this experiment were not done until mid-February, well into endodormancy. Future studies should examine the effect of different application timings on the efficacy of gibberllic acid to delay spring budbreak.
+
+Finally, other plant growth hormones may be more effective than gibberellic acid at delaying spring budbreak in kiwiberry. Fall application of ethephon sprays, for example, have been used to delay spring budbreak in a variety of fruit and nut crops [@liu2019a] . Future studies could explore this avenue to delay kiwiberry budbreak and reduce frost risk.
+
+[**Conclusion**]{.underline}
+
+The chill requirement for 'Geneva 3' kiwiberry is between 40-45 chill portions. Many locations throughout the Eastern Seaboard as far south as Georgia fulfilled that requirement in Winter 2023-24. Therefore, the risk of unfulfilled chill requirement is low for that region, and should not hamper the adoption of 'Geneva 3' kiwiberry as a new novel fruit crop.
+
+Winter applications of gibberllic acid at various concentrations had no effect on the budbreak date of either 'Ananasnaya' or 'Meader Female' kiwiberry varieties, and therefore did not reduce vulnerability to spring frost. Future studies exploring either different timing, such as before ecodormancy, or different materials, such as ethephon, should be explored to delay budbreak in kiwiberry.
 
 Works Cited
