@@ -18,6 +18,8 @@ library(formatR)
 knitr::opts_chunk$set(echo = TRUE,tidy.opts=list(width.cutoff=30), tidy=TRUE)
 ```
 
+GitHub for saved code: [Zoe Robinson Bio806 Final Github](https://github.com/Zoe413/Final_Bio806)
+
 [**Introduction**]{.underline}
 
 No plant can grow in every climate. Plants have adopted to their native conditions through evolution, and will not grow if the climate is significantly different than the one they have adapted to. If the desired growing location for a plant has a significantly different climate than the target plant's native climate, either the environment around the plant must be modified (such as by using a greenhouse), or the plant itself must be manipulated (such as by using dormancy-breaking sprays to change the plant's natural dormancy cycle) [@grubinger2015; @mcpherson2001]. Horticultural traits to consider when matching plants to climate conditions include winter hardiness, preferred amount of rainfall, preferred soil type, preferred amount of light, susceptibility to heat stress, chill requirement, etc [@usda; @parkes2020].
